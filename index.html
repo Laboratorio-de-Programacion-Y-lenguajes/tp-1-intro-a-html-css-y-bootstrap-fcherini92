@@ -7,14 +7,32 @@
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <a class="navbar-brand fw-bold" href="index.html">Franco | Blog Personal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
@@ -32,19 +50,43 @@
             <h2 class="mb-4">Artículos Recientes</h2>
 
             <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
+            <div class="row">                
+                <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        <img src="assets/images/sawh.jpg" class="card-img-top" alt="Aeropuerto de Ushuaia">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Observación en el Fin del Mundo</h5>
+                            <p class="card-text text-muted">Categoría: Meteorología</p>
+                            <p class="card-text">Explorando los desafíos técnicos de la codificación METAR y SYNOP en la estación SAWH.</p>
+                            <a href="#" class="btn btn-primary btn-sm mt-auto">Leer más</a>
                         </div>
                     </div>
                 </div>
-                <!-- TODO: agregar 2 más -->
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/fire.jpg" class="card-img-top" alt="Parque Nacional">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Entre Bosques y Fuego</h5>
+                            <p class="card-text text-muted">Categoría: Experiencias</p>
+                            <p class="card-text">Relatos de mi etapa como combatiente de incendios forestales en el Parque Nacional Tierra del Fuego.</p>
+                            <a href="#" class="btn btn-primary btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/momo.jpg" class="card-img-top" alt="Gato Snowshoe">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">De la animación a la realidad</h5>
+                            <p class="card-text text-muted">Categoría: Personal</p>
+                            <p class="card-text">Como un personaje de ficcion se introdujo en mi vida cotidiana.</p>
+                            <a href="#" class="btn btn-primary btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
@@ -52,9 +94,13 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
+            <div class="mb-3">
+            <a href="https://github.com/Fcherini92" class="text-white me-3 text-decoration-none">GitHub</a>
+            <a href="https://linkedin.com/in/franco-iván-cherini-b0776472/" class="text-white me-3 text-decoration-none">LinkedIn</a>
+            <a href="https://instagram.com/fran.ch73" class="text-white text-decoration-none">Instagram</a>
         </div>
+        <p class="mb-0">&copy; 2026 Franco | Observador Meteorológico &amp; Estudiante Lic. Sistemas UNTDF. Todos los derechos reservados.</p>
+    </div>
     </footer>
 
     <!-- Bootstrap JS -->
