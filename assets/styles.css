@@ -1,9 +1,9 @@
 /* ===== Variables CSS ===== */
 :root {
-    --primary-color: #0d6efd;
-    --text-color: #212529;
-    --light-bg: #f8f9fa;
-    --border-color: #dee2e6;
+    --primary-color: #a04028;   /* Terracota para botones y destacados */
+    --text-color: #2d241e;      /* Marrón oscuro para lectura cómoda */
+    --light-bg: #f4ece2;        /* Crema para el fondo general */
+    --border-color: #d2b48c;    /* Canela para líneas divisorias y bordes */
 }
 
 /* ===== Reset y base ===== */
@@ -18,14 +18,16 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    background-color: var(--light-bg);
     color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
 }
 
 /* ===== Tipografía ===== */
 h1, h2, h3 {
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
@@ -50,7 +52,11 @@ a {
 
 /* ===== Hero Section ===== */
 .bg-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #7d311e 100%) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
 }
 
 /* ===== Cards ===== */
@@ -84,10 +90,10 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0b5ed7;
+    background-color: #853320; /* Un terracota más oscuro */
+    border-color: #853320;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(13 110 253 / 30%);
+    box-shadow: 0 4px 8px rgba(160, 64, 40, 0.3);
 }
 
 /* ===== Formulario ===== */
@@ -100,12 +106,12 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgb(13 110 253 / 25%);
+    box-shadow: 0 0 0 0.2rem rgba(160, 64, 40, 0.25);
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
 .form-control:valid {
-    border-color: #198754;
+    border-color: #6c7848;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M.5 4.5L2 3l1-1 1 1 2-2 1 1-3 3-1 1-1-1-1-1z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right calc(0.375em + 0.1875rem) center;
@@ -114,7 +120,7 @@ a {
 }
 
 .form-control:invalid {
-    border-color: #dc3545;
+    border-color: #9e2a2b;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.9h-.4z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right calc(0.375em + 0.1875rem) center;
@@ -136,12 +142,14 @@ a {
 
 /* ===== Footer ===== */
 footer {
+    background-color: var(--text-color); 
+    color: var(--light-bg);
     margin-top: auto;
     border-top: 1px solid var(--border-color);
 }
 
 footer a {
-    color: #adb5bd;
+    color: var(--border-color);
 }
 
 /* ===== Accesibilidad ===== */
@@ -153,7 +161,7 @@ input:focus {
 }
 
 footer a:hover {
-    color: white;
+    color: var(--primary-color);
 }
 
 /* ===== Responsive ===== */
