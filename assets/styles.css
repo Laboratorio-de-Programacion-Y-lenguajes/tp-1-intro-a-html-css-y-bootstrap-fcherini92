@@ -20,7 +20,7 @@ html {
 body {
     background-color: var(--light-bg);
     color: var(--text-color);
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     line-height: 1.6;
 }
 
@@ -90,10 +90,10 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #853320; /* Un terracota más oscuro */
+    background-color: #853320;
     border-color: #853320;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(160, 64, 40, 0.3);
+    box-shadow: 0 4px 8px rgb(160 64 40 / 30%);
 }
 
 /* ===== Formulario ===== */
@@ -106,7 +106,7 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(160, 64, 40, 0.25);
+    box-shadow: 0 0 0 0.2rem rgb(160 64 40 / 25%);
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
