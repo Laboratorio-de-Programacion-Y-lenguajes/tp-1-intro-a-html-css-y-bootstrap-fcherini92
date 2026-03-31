@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de mí - Mi Blog</title>
+    <title>Acerca de mí - Franco | Blog Personal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <!-- Navbar (copiar de index.html) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <a class="navbar-brand fw-bold" href="index.html">Franco | Blog Personal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
     <!-- Contenido -->
     <main class="py-5">
         <div class="container">
-            <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
+            <div class="row align-items-center">
+                <aside class="col-md-3 mb-4 text-center">
+                    <img src="assets/images/perfil.jpg" class="img-fluid rounded-circle shadow mb-3" alt="Foto de Franco" style="max-width: 200px;">
+                    <h3 class="h4">Franco</h3>
+                    <p class="text-muted">Observador Meteorológico &amp; Estudiante de Sistemas</p>
+                    <div class="border-top pt-3">
+                        <small class="d-block text-uppercase fw-bold text-muted">Ubicación</small>
+                        <span>Ushuaia, Argentina</span>
+                    </div>
                 </aside>
 
                 <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
-                    <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
+                <article class="col-md-9 border-start ps-md-5">
+                    <h1 class="display-5 mb-4">Sobre mí</h1>
+                    <p class="lead">Bienvenido a mi rincón digital. Soy un apasionado por la tecnología, el clima y el entorno natural del Fin del Mundo.</p>
+                    
+                    <p>Actualmente me desempeño como <strong>Observador Meteorológico de Superficie</strong> en el Aeropuerto Internacional de Ushuaia (SAWH). Mi trabajo diario implica la precisión técnica en la codificación de fenómenos atmosféricos, asegurando datos vitales para la navegación aérea y el servicio meteorológico nacional.</p>
+                    
+                    <p>Antes de sumergirme de lleno en la meteorología, serví durante cinco años como <strong>combatiente de incendios forestales</strong> en el Parque Nacional Tierra del Fuego. Esa experiencia forjó mi respeto por la naturaleza y mi capacidad para operar en condiciones críticas.</p>
+                    
+                    <p>Hoy en día, complemento mi labor profesional estudiando la carrera de <strong>Sistemas en la Universidad Nacional de Tierra del Fuego (UNTDF)</strong>, donde busco integrar mis conocimientos operativos con el desarrollo de software y la gestión de datos.</p>
+
+                    <h2 class="h4 mt-4">Intereses</h2>
+                    <ul class="list-inline mt-3">
+                        <li class="list-inline-item badge bg-secondary p-2">Java</li>
+                        <li class="list-inline-item badge bg-secondary p-2">Sistemas Operativos</li>
+                        <li class="list-inline-item badge bg-secondary p-2">Hardware</li>
+                        <li class="list-inline-item badge bg-secondary p-2">Momo</li>
+                    </ul>
                 </article>
             </div>
         </div>
@@ -39,8 +74,13 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <div class="mb-3">
+            <a href="https://github.com/Fcherini92" class="text-white me-3 text-decoration-none">GitHub</a>
+            <a href="https://linkedin.com/in/franco-iván-cherini-b0776472/" class="text-white me-3 text-decoration-none">LinkedIn</a>
+            <a href="https://instagram.com/fran.ch73" class="text-white text-decoration-none">Instagram</a>
         </div>
+        <p class="mb-0">&copy; 2026 Franco | Observador Meteorológico &amp; Estudiante Lic. Sistemas UNTDF. Todos los derechos reservados.</p>
+    </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
